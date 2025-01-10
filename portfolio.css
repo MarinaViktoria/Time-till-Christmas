@@ -1,0 +1,130 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1482330454287-3cf6611d0bc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjR8fGNocmlzdG1hc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+  min-height: 100vh;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  padding: 20px;
+  font-size: 60px;
+  font-family: "Dancing Script", cursive;
+  color: #009eff;
+  background-color: rgba(251, 248, 249, 0.9);
+  border: 1px solid #009eff;
+  border-radius: 50px;
+  text-align: center;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.christmas {
+  background-color: rgba(251, 248, 249, 0.82);
+  height: 10rem;
+  width: 9rem;
+  margin-top: 4rem;
+  border: 2px solid #009eff;
+  border-radius: 40px;
+}
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h3 {
+  color: #009eff;
+  font-size: 20px;
+  font-family: "Dancing Script", cursive;
+  margin-top: 0px;
+}
+.days,
+.hours,
+.minutes,
+.seconds {
+  color: #009eff;
+  font-size: 40px;
+  font-family: "Dancing Script", cursive;
+  margin-bottom: 5px;
+}
+.new-heading {
+  font-size: 50px;
+  font-family: "Dancing Script", cursive;
+  color: #009eff;
+  border: none;
+}
+.my-button {
+  display: flex;
+  justify-content: center;
+}
+button {
+  margin-left: 10%;
+  border: none;
+  border-radius: 40px;
+  transition: transform 0.3s;
+}
+button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  background-color: rgb(203, 133, 240);
+}
+
+@media all and (max-width: 1000px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+@media all and (max-width: 800px) {
+  h1,
+  .new-heading {
+    font-size: 40px;
+  }
+  .christmas {
+    height: 8rem;
+    width: 7rem;
+  }
+  .days,
+  .hours,
+  .minutes,
+  .seconds {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+}
+@media all and (max-width: 600px) {
+  h1,
+  .new-heading {
+    font-size: 30px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .christmas {
+    height: 5rem;
+    width: 12rem;
+    margin: 10px;
+  }
+  .block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    gap: 5px;
+  }
+  .days,
+  .hours,
+  .minutes,
+  .seconds {
+    font-size: 30px;
+    margin-top: 1.5rem;
+  }
+}
